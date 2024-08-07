@@ -64,6 +64,7 @@ const deck = new Deck();
 const dealer = new Dealer(deck);
 dealer.shuffleDeck();
 
+const field = new Player('field');
 const player1 = new Player('kida');
 const player2 = new Player('subaru');
 
@@ -76,9 +77,10 @@ function dealCards(player: Player, dealer: Dealer, numCards: number) {
   }
 }
 
-
+dealCards(field, dealer, 5);
 dealCards(player1, dealer, 7);
 dealCards(player2, dealer, 7);
 
+field.showHands();
 player1.showHands();
 player2.showHands();
