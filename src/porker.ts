@@ -77,8 +77,8 @@ function dealCards(player: Player, dealer: Dealer, numCards: number) {
 }
 
 
-dealCards(player1, dealer, 5);
-dealCards(player2, dealer, 5);
+dealCards(player1, dealer, 7);
+dealCards(player2, dealer, 7);
 
 player1.showHands();
 player2.showHands();
